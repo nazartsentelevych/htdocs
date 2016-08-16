@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="141b2050-2127-4950-94b5-2a9abf7d82c3" name="goi_vapi" url="http://ddm.ftp.ukraine.com.ua">
+        <fileTransfer host="ddm.ftp.ukraine.com.ua" port="21" rootFolder="/www" password="dff9dfdedfc3dfc4dfcddfc9dfcfdfc4dfdedf9b" username="ddm_nazar">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

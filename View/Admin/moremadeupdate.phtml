@@ -1,0 +1,43 @@
+<form method="post">
+    <fieldset>
+        <legend>Змінити інформацію про пророблену роботу:</legend>
+        <div>
+        <label>
+            <select name="vuddialnosti">
+                <option value="<?=$oldmoremade['vuddialnosti']?>">
+                    <?=$oldmoremade['vuddialnosti']?>
+                </option>
+                <option value="Лист">
+                    Лист
+                </option>
+                <option value="Дзвінок">
+                    Дзвінок
+                </option>
+                <option value="Надано консультації">
+                    Надано консультації
+                </option>
+                <option value="Зустріч з роботодавцем">
+                    Зустріч з роботодавцем
+                </option>
+                <option value="Відмовлено">
+                    Відмовлено
+                </option>
+                <option value="Допомога з оформлення документів">
+                    Допомога з оформлення документів
+                </option>
+                <option value="Соціальний супровід">
+                    Соціальний супровід
+                </option>
+            </select>
+        </label>
+        </div>
+        <div>
+        <label>результат
+            <input type="text" name="made" value="<?=$oldmoremade['made']?>">
+        </label>
+        </div><br>
+    </fieldset>
+    <button>Зберегти</button>
+</form>
+
+<b id="flash"><?=\Library\Session::getFlash()?></b>

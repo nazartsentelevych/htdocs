@@ -1,0 +1,28 @@
+
+<td><a href="/companycreate/<?= $vud ?>" class="btn btn-info" role="button">Добавити компанію</a><br>
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td class="active"><h3>ID</h3></td>
+            <td class="active"><h3>Компанія</h3></td>
+            <td class="active"><h3>Контакти</h3></td>
+
+            <!--            <td class="active"><h3>E-mail</h3></td>-->
+        </tr>
+
+
+        <?php if (!$companes==null){?>
+        <?php foreach ($companes as $company): ?>
+
+        <tr>
+            <td class="active"><?=$company['id']?></td>
+            <td class="active"><?=$company['company']?></td>
+            <td class="active"><?=$company['contact']?></td>
+            <td><a href="/showcompany/<?= $company['id'] ?>" class="btn btn-info" role="button"><i class="fa fa-search" aria-hidden="true"></i> Переглянути</a><br></td>
+
+<!--            <td><a href="/showuser/--><?//= $company['id'] ?><!--" class="btn btn-info" role="button"><i class="fa fa-search" aria-hidden="true"></i> Переглянути</a><br></td>-->
+        <tr>
+            <?php endforeach; }?>
+
+
+    </table>
